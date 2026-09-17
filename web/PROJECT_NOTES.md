@@ -36,7 +36,12 @@ Local browser acceptance completed on 2026-09-17:
 
 - `/`, `/support/`, and `/privacy/` loaded from the local static server and exposed the expected semantic headings, navigation, and `mailto:` support links.
 - Desktop visual review covered the homepage product-preview composition, support contact panel, and privacy-policy reading hierarchy.
-- The production deployment remains intentionally unconfigured: GitHub Pages, custom domain, and DNS are separate post-acceptance steps.
+- GitHub Pages source is the `web/` artifact, deployed by `.github/workflows/deploy-pages.yml` after Pages is enabled in the repository settings.
+- The default public address will be `https://chenhuanjie125.github.io/StitchPreview-Website/`. The custom domain and DNS are separate post-acceptance steps.
+
+## Custom-domain handoff
+
+After GitHub Pages reports a successful default-domain deployment, configure `stitch.showleafy.com` as the custom domain in the repository’s Pages settings. At the DNS provider, add a `CNAME` record for host `stitch` with value `chenhuanjie125.github.io`; do not add a URL path or `https://` prefix. Wait for GitHub to verify the record, then enable HTTPS enforcement in the Pages settings.
 
 ## Fidelity ledger
 
