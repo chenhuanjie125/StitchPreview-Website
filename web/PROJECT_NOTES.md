@@ -30,6 +30,12 @@
 - Generated icon: `web/assets/stitchpreview-app-icon.png`. It is a website asset and a candidate application icon, pending the separate macOS App Icon asset-catalog export/review.
 - Homepage concept reference: `docs/homepage-concept.png` (not a production page asset).
 
+## Languages
+
+- English is the default. The header button switches the current page to Simplified Chinese and then shows `EN` for switching back.
+- `web/language-toggle.js` owns the shared copy dictionary and persists the choice in browser `localStorage` under `stitchpreview-language`.
+- Every new public English string must receive a Simplified Chinese counterpart in this file before release. Validate all three routes with `bash web/tests/localization-contract.sh` and a browser click-through.
+
 ## Deployment status
 
 Local browser acceptance completed on 2026-09-17:
