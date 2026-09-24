@@ -2,3 +2,51 @@
 
 .illustration-note{margin:0;padding:8px 14px;border-top:1px solid #e5e5e5;background:#fcfcfc;color:var(--muted);font-size:12px;text-align:center}
 .support-grid .formats-card,.support-grid article:last-child{grid-column:1/-1}.support-grid .formats-card p{max-width:760px;margin:0 0 12px}.support-grid .formats-card p:last-child{margin-bottom:0}
+
+/* Reading and responsive refinements */
+:root{--ink-soft:#33455d}
+.site-header{position:relative;z-index:1}
+.site-header nav a:focus-visible,.text-link:focus-visible,.button:focus-visible,.brand:focus-visible{outline:2px solid var(--coral);outline-offset:5px;border-radius:4px}
+.content-page a:visited,footer a:visited{color:#7d4a60}
+.contact-callout a:visited{color:#fff}
+.hero .actions{gap:14px}
+.hero .actions .button{gap:9px}
+.availability-label{color:var(--muted);font-size:14px;font-weight:600}
+.support-page{padding-top:64px}
+.support-page h1{font-size:clamp(48px,6vw,70px);max-width:850px}
+.support-page .intro{font-size:20px;line-height:1.5;margin-bottom:42px}
+.format-section{border-top:2px solid var(--ink);border-bottom:1px solid var(--line)}
+.section-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:27px 0 16px}
+.section-heading h2{font-size:32px;margin:0}
+.section-heading p{margin:0;color:var(--muted);font-size:15px}
+.format-row{display:grid;grid-template-columns:minmax(185px,235px) 1fr;gap:30px;padding:21px 0;border-top:1px solid var(--line)}
+.format-row h3{font:700 22px/1.2 var(--serif);margin:0 0 6px}
+.format-row p{margin:0;color:var(--ink-soft);line-height:1.65}
+.format-row>div p{color:var(--muted);font-size:15px}
+.format-row .format-list{font-weight:700;letter-spacing:.015em;color:var(--ink);line-height:1.7}
+.format-note{margin:0 0 24px;padding:16px 20px;border-radius:8px;background:var(--paper-deep);color:var(--ink-soft);line-height:1.6}
+.support-page .support-grid{margin-top:38px}
+.support-page .contact-callout{margin:42px 0 0}
+.legal{max-width:780px}
+.legal h1{font-size:clamp(48px,6vw,72px)}
+.legal .intro{font-size:20px;line-height:1.55}
+.legal section p{font-size:17px;line-height:1.72;max-width:72ch}
+.legal section{padding:26px 0}
+@media(max-width:620px){
+  .site-header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px 12px;padding:17px 20px 14px}
+  .site-header .brand{min-width:0}
+  .site-header nav{grid-column:1/-1;grid-row:2;display:flex;justify-content:space-between;gap:16px;width:100%;font-size:14px}
+  .site-header .language-toggle{grid-column:2;grid-row:1;align-self:center}
+  .hero{padding-top:42px}
+  .hero h1{font-size:clamp(45px,12vw,56px)}
+  .hero-copy>p{font-size:19px;line-height:1.48}
+  .support-page,.legal{padding-top:45px}
+  .support-page h1,.legal h1{font-size:clamp(44px,11vw,54px)}
+  .support-page .intro,.legal .intro{font-size:18px;line-height:1.5}
+  .section-heading{display:block}
+  .section-heading p{margin-top:8px}
+  .format-row{grid-template-columns:1fr;gap:11px;padding:20px 0}
+  .format-row h3{font-size:22px}
+  .format-note{padding:15px 16px}
+  .legal section p{font-size:16px}
+}

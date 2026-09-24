@@ -38,6 +38,21 @@
     'EMD is not supported yet. Compatibility depends on verified file structures, not the extension alone; malformed, oversized, or unverified files show an information card.': 'EMD 尚未支持。兼容性取决于已验证的文件结构，而不只是扩展名；损坏、过大或未验证的文件会显示信息卡。',
     'StitchPreview is being prepared for an Apple Silicon Mac running macOS 15 or later.': 'StitchPreview 正在为运行 macOS 15 或更新系统的 Apple Silicon Mac 准备发布。'
   });
+  Object.assign(zh, {
+    'Formats and help.': '格式支持与帮助。',
+    'See which embroidery files have verified previews, what those previews show, and how to get help.': '了解哪些刺绣文件已有经过验证的预览、预览能显示什么，以及如何获得帮助。',
+    'Verified for limited file families in development builds.': '以下限定文件结构已在开发版本中验证。',
+    'Stitch previews': '针迹预览',
+    'Finder thumbnails and Quick Look show decoded stitch geometry.': '访达缩略图和快速查看显示解码后的针迹图形。',
+    'PES, DST, JEF, EXP, PEC, VP3, SEW, XXX, PCM, PCS, PCD, and PCQ': 'PES、DST、JEF、EXP、PEC、VP3、SEW、XXX、PCM、PCS、PCD 和 PCQ',
+    'Embedded-image preview': '内嵌图预览',
+    'Shows a saved image, not decoded stitches.': '显示保存的图片，不解码针迹。',
+    'EMB files with a readable embedded image. The image may not match current stitches; stitch counts, physical design dimensions, and hoop fit are unavailable.': '含可读取内嵌图的 EMB 文件。图片可能与当前针迹不一致；针数、设计物理尺寸和绣框适配均不可用。',
+    'Not yet supported': '尚未支持',
+    'Still undergoing separate format validation.': '仍需独立完成格式验证。',
+    'EMD is not supported yet.': 'EMD 尚未支持。',
+    'Compatibility depends on verified file structures, not the extension alone. Malformed, oversized, or unverified files show an information card. StitchPreview is being prepared for an Apple Silicon Mac running macOS 15 or later.': '兼容性取决于已验证的文件结构，而不只是扩展名。损坏、过大或未验证的文件会显示信息卡。StitchPreview 正在为运行 macOS 15 或更新系统的 Apple Silicon Mac 准备发布。'
+  });
   const originals = new Map();
   const translate = (language) => {
     const chinese = language === 'zh-CN';

@@ -1,3 +1,49 @@
 <!doctype html>
-<script defer src="../language-toggle.js" data-i18n="languageRuntime"></script>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Find StitchPreview format support, preview limits, and help for macOS."><title>Support — StitchPreview</title><link rel="icon" href="../assets/stitchpreview-app-icon.png"><link rel="stylesheet" href="../styles.css"></head><body><header class="site-header"><a class="brand" href="../" aria-label="StitchPreview home"><img src="../assets/stitchpreview-app-icon.png" alt=""><span>StitchPreview</span></a><nav aria-label="Main navigation"><a href="../">Home</a><a aria-current="page" href="./">Support</a><a href="../privacy/">Privacy</a></nav></header><main class="content-page"><p class="overline">Support</p><h1>Help for a clearer view of your designs.</h1><p class="intro">StitchPreview helps you identify embroidery files in Finder and inspect them with Quick Look. We’re here if something does not look right.</p><section class="contact-callout"><h2>Contact support</h2><p>For app issues, feedback, or feature requests, email us at <a href="mailto:support@showleafy.com">support@showleafy.com</a>.</p><a class="button" href="mailto:support@showleafy.com?subject=StitchPreview%20support">Email support</a></section><section class="support-grid"><article class="formats-card"><h2>Supported formats</h2><p>In development builds, stitch previews are verified for limited families of PES, DST, JEF, EXP, PEC, VP3, SEW, XXX, PCM, PCS, PCD, and PCQ.</p><p>EMB files with a readable embedded image receive a labelled image preview, not a stitch preview. EMB images may not match the current stitches and do not provide stitch counts or physical design dimensions.</p><p>EMD is not supported yet. Compatibility depends on verified file structures, not the extension alone; malformed, oversized, or unverified files show an information card.</p><p>StitchPreview is being prepared for an Apple Silicon Mac running macOS 15 or later.</p></article><article><h2>See a preview</h2><ol><li>Locate a supported file in Finder.</li><li>Select it and press the Space bar.</li><li>Use the preview controls to inspect the design.</li></ol></article><article><h2>Colours and accuracy</h2><p>Many formats do not reliably identify physical thread colours; displayed colours may be preview colours only. Some files do not provide a verified trim count or other statistics. Hoop fit compares dimensions on screen and is not a production-safety guarantee. EMB image previews do not include stitch statistics or hoop fit.</p></article><article><h2>Preview not appearing?</h2><p>Confirm that StitchPreview is installed on a compatible Mac and that its Finder and Quick Look extensions are enabled. Restart Finder or Quick Look after an update, then try a newly copied supported file. If the issue continues, email your macOS version, app version, file format, and a description of the visible error. No embroidery file is attached automatically. Please do not send a design file or identifying filename; we will first agree on authorization, diagnostic use, and deletion if a sample is needed.</p></article></section></main><footer><a class="brand" href="../"><img src="../assets/stitchpreview-app-icon.png" alt=""><span>StitchPreview</span></a><div><a href="mailto:support@showleafy.com">support@showleafy.com</a><a href="../privacy/">Privacy</a></div></footer></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Find StitchPreview format support, preview limits, and help for macOS.">
+    <title>Support — StitchPreview</title>
+    <link rel="icon" href="../assets/stitchpreview-app-icon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../language-toggle.js" data-i18n="languageRuntime"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../" aria-label="StitchPreview home"><img src="../assets/stitchpreview-app-icon.png" alt=""><span>StitchPreview</span></a>
+      <nav aria-label="Main navigation"><a href="../">Home</a><a aria-current="page" href="./">Support</a><a href="../privacy/">Privacy</a></nav>
+    </header>
+    <main class="content-page support-page">
+      <p class="overline">Support</p>
+      <h1>Formats and help.</h1>
+      <p class="intro">See which embroidery files have verified previews, what those previews show, and how to get help.</p>
+
+      <section class="format-section" aria-labelledby="supported-formats-heading">
+        <div class="section-heading"><h2 id="supported-formats-heading">Supported formats</h2><p>Verified for limited file families in development builds.</p></div>
+        <div class="format-row">
+          <div><h3>Stitch previews</h3><p>Finder thumbnails and Quick Look show decoded stitch geometry.</p></div>
+          <p class="format-list">PES, DST, JEF, EXP, PEC, VP3, SEW, XXX, PCM, PCS, PCD, and PCQ</p>
+        </div>
+        <div class="format-row">
+          <div><h3>Embedded-image preview</h3><p>Shows a saved image, not decoded stitches.</p></div>
+          <p>EMB files with a readable embedded image. The image may not match current stitches; stitch counts, physical design dimensions, and hoop fit are unavailable.</p>
+        </div>
+        <div class="format-row">
+          <div><h3>Not yet supported</h3><p>Still undergoing separate format validation.</p></div>
+          <p>EMD is not supported yet.</p>
+        </div>
+        <p class="format-note">Compatibility depends on verified file structures, not the extension alone. Malformed, oversized, or unverified files show an information card. StitchPreview is being prepared for an Apple Silicon Mac running macOS 15 or later.</p>
+      </section>
+
+      <section class="support-grid" aria-label="Preview guidance">
+        <article><h2>See a preview</h2><ol><li>Locate a supported file in Finder.</li><li>Select it and press the Space bar.</li><li>Use the preview controls to inspect the design.</li></ol></article>
+        <article><h2>Colours and accuracy</h2><p>Many formats do not reliably identify physical thread colours; displayed colours may be preview colours only. Some files do not provide a verified trim count or other statistics. Hoop fit compares dimensions on screen and is not a production-safety guarantee. EMB image previews do not include stitch statistics or hoop fit.</p></article>
+        <article><h2>Preview not appearing?</h2><p>Confirm that StitchPreview is installed on a compatible Mac and that its Finder and Quick Look extensions are enabled. Restart Finder or Quick Look after an update, then try a newly copied supported file. If the issue continues, email your macOS version, app version, file format, and a description of the visible error. No embroidery file is attached automatically. Please do not send a design file or identifying filename; we will first agree on authorization, diagnostic use, and deletion if a sample is needed.</p></article>
+      </section>
+
+      <section class="contact-callout"><h2>Contact support</h2><p>For app issues, feedback, or feature requests, email us at <a href="mailto:support@showleafy.com">support@showleafy.com</a>.</p><a class="button" href="mailto:support@showleafy.com?subject=StitchPreview%20support">Email support</a></section>
+    </main>
+    <footer><a class="brand" href="../"><img src="../assets/stitchpreview-app-icon.png" alt=""><span>StitchPreview</span></a><div><a href="mailto:support@showleafy.com">support@showleafy.com</a><a href="../privacy/">Privacy</a></div></footer>
+  </body>
+</html>
